@@ -1161,9 +1161,6 @@ button:hover, a:hover {
     .section__title {
       height: 56px; } }
 
-.swiper-prices, .swiper-devices, .swiper-brands {
-  min-width: 320px; }
-
 .swiper-pagination {
   position: static;
   display: flex;
@@ -1179,13 +1176,16 @@ button:hover, a:hover {
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC; }
 
+.swiper-prices, .swiper-devices, .swiper-brands {
+  min-width: 320px;
+  position: relative; }
+
 .swiper-brands::before {
   content: '';
   position: absolute;
-  width: 20px;
+  width: 30px;
   height: 72px;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  top: 16px;
   right: 0;
   z-index: 2; }
 
@@ -1196,10 +1196,9 @@ button:hover, a:hover {
 .swiper-devices::before {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 160px;
+  width: 30px;
+  height: 242px;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  top: 16px;
   right: 0;
   z-index: 2; }
 
@@ -1213,7 +1212,6 @@ button:hover, a:hover {
   width: 30px;
   height: 200px;
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  top: 16px;
   right: 0;
   z-index: 2; }
 
