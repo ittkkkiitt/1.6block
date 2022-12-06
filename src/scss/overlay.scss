@@ -1,0 +1,15 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.96);
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.overlay--active {
+  visibility: visible;
+}

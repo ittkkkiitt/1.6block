@@ -1,0 +1,72 @@
+.swiper-pagination {
+    position: static;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+ }
+
+.swiper-pagination-bullet {
+    background-color: #9d9d9d;
+    width: 12px;
+    height: 12px;
+ }
+
+ .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.swiper-prices, .swiper-devices, .swiper-brands{
+    min-width: 320px;
+    position: relative;
+}
+
+
+.swiper-brands {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 72px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        right: 0;
+        z-index: 2;
+    }
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+
+.swiper-devices {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 242px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        right: 0;
+        z-index: 2;
+    }
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+
+.swiper-prices {
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 200px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        right: 0;
+        z-index: 2;
+    }
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

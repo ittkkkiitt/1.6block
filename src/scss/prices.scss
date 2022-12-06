@@ -1,0 +1,239 @@
+.prices__nav {
+    width: 100%;
+    padding: 16px 0;
+    grid-template-columns: repeat(auto-fit, 224px);
+}
+
+.prices__item {
+    margin: 0 16px;
+    padding: 16px;
+    height: 200px;
+    min-width:260px;
+    max-width: 260px;
+    position: relative;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover, &:focus {
+        transition: .3s;
+        box-shadow: 0 0 2px 2px #FF3E79;
+        transform: scale(0.97);
+
+        .prices__icon{
+            transform: rotate(180deg);
+            transition: .4s;
+        }
+    }
+
+ }
+
+
+.prices__title {
+    font-weight: 400;
+    height: 56px;
+    padding: 16px;
+    letter-spacing: -0.2px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+
+.prices__nav--advanced {
+    display: none;
+}
+
+.prices__item-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    margin-left: auto;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover, &:focus{
+        opacity: 0.8;
+        transform: scale(0.97);
+    }
+}
+.prices__item-name {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+}
+
+.prices__item-caption {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.price-table {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: table;
+    }
+}
+
+
+// .price-table__header {
+//   width: 95%;
+//   padding: 0 16px;
+//   margin: 0 auto;
+//   display: grid;
+//   grid-template-columns: 4fr 1fr 1fr 1fr;
+//   column-gap: 20px;
+//   height: 65px;
+//   align-items: center;
+//   font-size: 1rem;
+//   line-height: 16px;
+//   color: #7e7e82;
+//   mix-blend-mode: normal;
+//   opacity: 0.72;
+//   font-weight: 400;
+// }
+
+// .price-table__container {
+//   width: 95%;
+//   margin: 0 auto;
+//   background-color: #fff;
+//   border-radius: 6px;
+//   padding: 0 16px;
+//   font-size: 14px;
+//   line-height: 18px;
+//   letter-spacing: 0.2px;
+//   color: #1b1c21;
+//   margin-bottom: 30px;
+// }
+
+// .price-table__item {
+//   display: grid;
+//   grid-template-columns: 4fr 1fr 1fr 1fr;
+//   column-gap: 20px;
+//   height: 65px;
+//   align-items: center;
+
+//   &:not(:last-child) {
+//     border-bottom: 1px solid #eaeaea;
+//   }
+// }
+
+.price-table__btn {
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    margin-left: auto;
+    background-color: #ff3e79;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover, &:focus{
+        opacity: 0.8;
+        transform: scale(0.97);
+    }
+}
+
+.price-table{
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.price-table__header {
+    width: 100%;
+    height: 65px;
+}
+.price-table__title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #7e7e82;
+    text-align: start;
+}
+.price-table__body {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0 2.5px rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.price-table__item {
+    width: 100%;
+    font-size: 14px;
+    color: #1b1c21;
+    height: 65px;
+    border-bottom: 1px solid #eaeaea;
+}
+.price-table__item:last-child {
+    border-bottom: none;
+}
+.price-table__btn-container {
+    text-align: end;
+}
+
+.price-table__caption--name {
+    border-left: 16px solid transparent;
+}
+.price-table__btn-container {
+    border-right: 16px solid transparent;
+}
+
+
+
+.price-table__footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        padding-top: 16px;
+        width: 95%;
+        margin: 0 auto 50px;
+    }
+}
+
+.price-table__footer-description {
+  display: inline-block;
+  max-width: 426px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.price-table__link {
+  display: inline;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+
+}
+.price-table__link-caption {
+    padding-right: 12px;
+}
+
+

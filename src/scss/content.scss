@@ -1,0 +1,13 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  z-index: 1;
+}
+
+@media (min-width: $desktop) {
+  .content {
+    margin-left: 320px;
+  }
+}
