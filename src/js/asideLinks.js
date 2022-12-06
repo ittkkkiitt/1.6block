@@ -1,6 +1,6 @@
 // изменение активной кнопки при выборе выборе ссылки в меню
 
-    const asideLinksContainer  = document.querySelector('.aside__nav-items');
+    const asideLinksContainer  = document.querySelector('.aside__nav');
     let selectedNavLink = document.querySelector('.aside__nav-link--active');
 
     asideLinksContainer.addEventListener('click', function(event) {

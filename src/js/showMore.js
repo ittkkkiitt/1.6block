@@ -1,19 +1,19 @@
 /// Читать далее
 
-   const textShowMoreBtn = document.querySelector('.about__btn-more');
+    const textShowMoreBtn = document.querySelector('.about__btn-more');
     const textContainer = document.querySelector('.about__description-container');
     const aboutIcon = document.querySelector('.about__more-icon');
     const aboutCaption = document.querySelector('.about__btn-caption');
 
     const showMoreAboutHandler = () => {
-      textContainer.classList.toggle('about__description-container--full');
-      aboutIcon.classList.toggle('about__btn-icon--hide');
+        textContainer.classList.toggle('about__description-container--full');
+        aboutIcon.classList.toggle('about__btn-icon--hide');
 
-      if (textContainer.classList.contains('about__description-container--full')) {
-        aboutCaption.textContent = 'Скрыть';
-      } else {
-        aboutCaption.textContent = 'Читать далее';
-      }
+        if (textContainer.classList.contains('about__description-container--full')) {
+            aboutCaption.textContent = 'Скрыть';
+        } else {
+            aboutCaption.textContent = 'Читать далее';
+        }
   };
 
     textShowMoreBtn.addEventListener('click', showMoreAboutHandler);
@@ -27,18 +27,18 @@
 
     const showMoreBrandsHandler = () => {
 
-    brandsBtnIco.classList.toggle('btn-more__icon--active');
-    brandsContainer.classList.toggle("brands__nav--advanced--open");
+        brandsBtnIco.classList.toggle('btn-more__icon--active');
+        brandsContainer.classList.toggle("brands__nav--advanced--open");
 
-    if (brandsContainer.classList.contains("brands__nav--advanced--open")) {
-        brandsBtnText.textContent = 'Скрыть'
-        for (const child of brandsContainer.children) {
-            child.removeAttribute('style');
+        if (brandsContainer.classList.contains("brands__nav--advanced--open")) {
+            brandsBtnText.textContent = 'Скрыть'
+            for (const child of brandsContainer.children) {
+                child.removeAttribute('style');
+            }
+        } else {
+            brandsBtnText.textContent = 'Показать все'
+            mediaHideItems(6,8,brandsContainer);
         }
-    } else {
-        brandsBtnText.textContent = 'Показать все'
-        mediaHideItems(6,8,brandsContainer);
-    }
     };
 
     brandsBtnMore.addEventListener('click', showMoreBrandsHandler);
@@ -53,19 +53,20 @@
 
     const showMoreDevicesHandler = () => {
 
-    devicesBtnIco.classList.toggle('devices__btn-icon--active');
-    devicesContainer.classList.toggle("devices__nav--advanced--open");
+        devicesBtnIco.classList.toggle('devices__btn-icon--active');
+        devicesContainer.classList.toggle("devices__nav--advanced--open");
 
-    if (devicesContainer.classList.contains("devices__nav--advanced--open")) {
-        devicesBtnText.textContent = 'Скрыть'
-        for (const child of devicesContainer.children) {
-            child.removeAttribute('style');
+        if (devicesContainer.classList.contains("devices__nav--advanced--open")) {
+            devicesBtnText.textContent = 'Скрыть'
+            for (const child of devicesContainer.children) {
+                child.removeAttribute('style');
+            }
+        } else {
+            devicesBtnText.textContent = 'Показать все'
+            mediaHideItems(3,4,devicesContainer);
         }
-    } else {
-        devicesBtnText.textContent = 'Показать все'
-        mediaHideItems(3,4,devicesContainer);
-    }
     };
+
     devicesBtnMore.addEventListener('click', showMoreDevicesHandler);
 
 
