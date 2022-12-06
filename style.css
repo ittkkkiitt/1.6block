@@ -116,6 +116,8 @@
     padding-right: 25px; } }
 
 .aside {
+  min-width: 320px;
+  width: 100%;
   top: 0;
   left: 0;
   min-height: 100%;
@@ -127,6 +129,9 @@
   transition: 0.3s;
   box-shadow: 20px 0px 20px -10px #cfcfcf;
   overflow-y: scroll; }
+  @media (min-width: 550px) {
+    .aside {
+      width: 320px; } }
   @media (min-width: 1120px) {
     .aside {
       position: fixed;
@@ -145,7 +150,7 @@
   min-height: 100%;
   width: 100vw;
   transition: 0.2s; }
-  @media (min-width: 361px) {
+  @media (min-width: 550px) {
     .aside-container {
       width: 320px; } }
 
@@ -167,7 +172,8 @@
 .aside__header {
   margin-top: 18px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
   @media (min-width: 768px) {
     .aside__header {
       margin-top: 24px; } }
@@ -175,22 +181,25 @@
     .aside__header {
       margin-top: 34px; } }
 
-.aside__close {
-  display: flex;
-  -moz-column-gap: 17px;
-       column-gap: 17px;
-  flex: 1 0 auto;
-  align-items: center; }
+.aside__logo {
+  margin-right: auto; }
+
+.aside__btn--close {
+  margin-right: 16px; }
   @media (min-width: 1120px) {
-    .aside__close .aside-btn__close {
+    .aside__btn--close {
       display: none; } }
 
 .aside__nav {
+  margin: 32px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  row-gap: 24px;
   flex: 1 1 12.5%;
   height: 450px; }
+  @media (min-width: 768px) {
+    .aside__nav {
+      row-gap: 32px; } }
 
 .aside__nav-link {
   position: relative;
@@ -209,7 +218,7 @@
     position: absolute;
     height: 32px;
     width: 4px;
-    left: -16px;
+    left: -5.5%;
     top: -4px;
     border-radius: 0 4px 4px 0;
     background-color: #41F6D7; }
@@ -976,6 +985,9 @@ button:hover, a:hover {
 
 .overlay--active {
   visibility: visible; }
+  @media (min-width: 1120px) {
+    .overlay--active {
+      visibility: hidden; } }
 
 .prices__nav {
   width: 100%;
