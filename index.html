@@ -11,7 +11,7 @@
 <link href="style.css" rel="stylesheet"></head>
 
 <body>
-  <div class="container">
+  <div class="wrapper">
     <aside class="aside">
       <div class="aside-container">
         <div class="aside__inner">
@@ -28,59 +28,59 @@
                     <img src="./img/search.svg" alt="Поиск">
                 </button>
             </div>
-            <main class="aside__main">
+            <div class="aside__main">
                 <nav class="aside__nav">
-                <ul class="aside__nav-items">
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Ремонт техники</a></li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link aside__nav-link--active">Услуги и сервисы</a>
-                    </li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Корпоративным клиентам</a>
-                    </li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Продавцам техники</a>
-                    </li>
-                    <li class="aside__nav-item">
-                    <a href="#" class="aside__nav-link">Партнерам</a>
-                    </li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Производителям</a>
-                    </li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Наши сервисные центры</a>
-                    </li>
-                    <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Контакты</a>
-                    </li>
-              </ul>
+                    <ul class="aside__nav-items">
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Ремонт техники</a></li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link aside__nav-link--active">Услуги и сервисы</a>
+                        </li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Корпоративным клиентам</a>
+                        </li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Продавцам техники</a>
+                        </li>
+                        <li class="aside__nav-item">
+                        <a href="#" class="aside__nav-link">Партнерам</a>
+                        </li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Производителям</a>
+                        </li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Наши сервисные центры</a>
+                        </li>
+                        <li class="aside__nav-item">
+                            <a href="#" class="aside__nav-link">Контакты</a>
+                        </li>
+                </ul>
             </nav>
-          </main>
-          <footer class="aside__footer">
-            <div class="aside__footer-menu">
-                <div class="aside__footer-nav">
-                    <button class="aside__btn btn--call">
-                        <img src="./img/call.svg" alt="Позвонить">
-                    </button>
-                    <button class="aside__btn btn--chat">
-                        <img src="./img/chat.svg" alt="Написать в чат">
-                    </button>
-                    <button class="aside__btn btn--profile">
-                        <img src="./img/profile.svg" alt="Открыть профиль">
-                    </button>
+        </div>
+        <div class="aside__footer">
+            <div class="aside__footer-inner">
+                    <div class="aside__footer-nav">
+                        <button class="aside__btn btn--call">
+                            <img src="./img/call.svg" alt="Позвонить">
+                        </button>
+                        <button class="aside__btn btn--chat">
+                            <img src="./img/chat.svg" alt="Написать в чат">
+                        </button>
+                        <button class="aside__btn btn--profile">
+                            <img src="./img/profile.svg" alt="Открыть профиль">
+                        </button>
+                    </div>
+                    <div class="aside__contacts">
+                        <a class="aside__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                        <a class="aside__phone" href="”tel:+78008908900”">8 800 890 8900</a>
+                    </div>
                 </div>
-                <div class="aside__contacts">
-                    <a class="aside__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-                    <a class="aside__phone" href="”tel:+78008908900”">8 800 890 8900</a>
+                <div class="aside__lang-options">
+                    <button class="lang__btn lang__btn--active">RU</button>
+                    <button class="lang__btn">EN</button>
+                    <button class="lang__btn">CH</button>
                 </div>
             </div>
-            <div class="aside__lang-options">
-                <button class="lang__btn lang__btn--active">RU</button>
-                <button class="lang__btn">EN</button>
-                <button class="lang__btn">CH</button>
-            </div>
-          </footer>
         </div>
       </div>
     </aside>
@@ -125,7 +125,7 @@
             </ul>
         </nav>
 </header>
-      <main>
+      <main class="main">
 
         <section class="head-content">
             <h1 class="head-content__title title">Услуги и сервисы</h1>
@@ -165,7 +165,7 @@
                 рекомендациям и, в свою очередь, советуют нас родным и близким.
               </p>
             </div>
-            <button class="about__btn-more">
+            <button class="about__btn-more btn-more">
               <img class="about__more-icon btn-more__icon" src="./img/expand.svg">
               <span class="about__btn-caption">Читать далее</span>
             </button>
@@ -642,106 +642,113 @@
                 <div class="swiper-pagination swiper-pagination-prices"></div>
         </div>
 
+            <table class="price-table">
+                <thead class="price-table__header">
+                    <tr class="price-table__header-row price-table__row">
+                        <th class="price-table__title">Ремонтные услуги</th>
+                        <th class="price-table__title">Цена</th>
+                        <th class="price-table__title">Срок</th>
+                    </tr>
+                </thead>
+                <tbody class="price-table__body">
+                    <tr class="price-table__item price-table__row">
+                            <td class="price-table__caption price-table__caption--name">Диагностика</td>
+                            <td class="price-table__caption price-table__caption--price">Бесплатно</td>
+                            <td class="price-table__caption price-table__caption--time">30 мин</td>
+                            <td class="price-table__btn-container">
+                                <button type="button" class="price-table__btn button btn--order">
+                                    <span class="button__text">Заказать</span>
+                                    <div class="button__icon"></div>
+                                </button>
+                            </td>
+                    </tr>
 
-          <div class="price-table">
-            <div class="price-table__header">
-                <div class="price-table__title">Ремонтные услуги</div>
-                <div class="price-table__title">Цена</div>
-                <div class="price-table__title">Срок</div>
-            </div>
+                    <tr class="price-table__item price-table__row">
+                            <td class="price-table__caption price-table__caption--name">Замена дисплея</td>
+                            <td class="price-table__caption price-table__caption--price">1 000 ₽</td>
+                            <td class="price-table__caption price-table__caption--time">30-120 мин</td>
+                            <td class="price-table__btn-container">
+                                <button type="button" class="price-table__btn button btn--order">
+                                    <span class="button__text">Заказать</span>
+                                    <div class="button__icon"></div>
+                                </button>
+                            </td>
+                    </tr>
+                    <tr class="price-table__item price-table__row">
+                            <td class="price-table__caption price-table__caption--name">Замена полифонического динамика</td>
+                            <td class="price-table__caption price-table__caption--price">1 000 ₽</td>
+                            <td class="price-table__caption price-table__caption--time">30-120 мин</td>
+                            <td class="price-table__btn-container">
+                                <button type="button" class="price-table__btn button btn--order">
+                                    <span class="button__text">Заказать</span>
+                                    <div class="button__icon"></div>
+                                </button>
+                            </td>
+                    </tr>
+                    <tr class="price-table__item price-table__row">
+                            <td class="price-table__caption price-table__caption--name">Тестирование с выдачей технического заключения</td>
+                            <td class="price-table__caption price-table__caption--price">1 000 ₽</td>
+                            <td class="price-table__caption price-table__caption--time">30-120 мин</td>
+                            <td class="price-table__btn-container">
+                                <button type="button" class="price-table__btn button btn--order">
+                                    <span class="button__text">Заказать</span>
+                                    <div class="button__icon"></div>
+                                </button>
+                            </td>
+                    </tr>
+                    <tr class="price-table__item price-table__row">
+                            <td class="price-table__caption price-table__caption--name">Замена программного обеспечения</td>
+                            <td class="price-table__caption price-table__caption--price">1 000 ₽</td>
+                            <td class="price-table__caption price-table__caption--time">30-120 мин</td>
+                            <td class="price-table__btn-container">
+                                <button type="button" class="price-table__btn btn--order button">
+                                    <span class="button__text">Заказать</span>
+                                    <div class="button__icon"></div>
+                                </button>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            <tfoot class="price-table__footer">
+                <div class="price-table__footer-container">
+                    <p class="price-table__footer-description">
+                        Все цены указаны с учетом НДС. Стоимость ремонта
+                        указана на единичную услугу. Для получения коммерческого
+                        предложения на постоянное обслуживание, оставьте заявку.
+                    </p>
+                    <a href="#" class="price-table__link">
+                        <span class="price-table__link-caption">Получить коммерческое предложение</span>
+                        <svg width="6" height="10" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FF3E79"/>
+                        </svg>
 
-            <ul class="price-table__container">
-
-              <li class="price-table__item">
-                    <div class="price-table__title">Диагностика</div>
-                    <div class="price-table__title">Бесплатно</div>
-                    <div class="price-table__title">30 мин</div>
-                    <button type="button" class="price-table__btn button">
-                        <span class="button__text">Заказать</span>
-                        <div class="button__icon"></div>
-                    </button>
-              </li>
-
-              <li class="price-table__item">
-                    <div class="price-table__title">Замена дисплея</div>
-                    <div class="price-table__title">1 000 ₽</div>
-                    <div class="price-table__title">30-120 мин</div>
-                    <button type="button" class="price-table__btn button">
-                        <span class="button__text">Заказать</span>
-                        <div class="button__icon"></div>
-                    </button>
-              </li>
-              <li class="price-table__item">
-                    <div class="price-table__title">Замена полифонического динамика</div>
-                    <div class="price-table__title">1 000 ₽</div>
-                    <div class="price-table__title">30-120 мин</div>
-                    <button type="button" class="price-table__btn button">
-                        <span class="button__text">Заказать</span>
-                        <div class="button__icon"></div>
-                    </button>
-              </li>
-              <li class="price-table__item">
-                    <div class="price-table__title">Тестирование с выдачей технического заключения</div>
-                    <div class="price-table__title">1 000 ₽</div>
-                    <div class="price-table__title">30-120 мин</div>
-                    <button type="button" class="price-table__btn button">
-                        <span class="button__text">Заказать</span>
-                        <div class="button__icon"></div>
-                    </button>
-              </li>
-              <li class="price-table__item">
-                    <div class="price-table__title">Замена программного обеспечения</div>
-                    <div class="price-table__title">1 000 ₽</div>
-                    <div class="price-table__title">30-120 мин</div>
-                    <button type="button" class="price-table__btn button">
-                        <span class="button__text">Заказать</span>
-                        <div class="button__icon"></div>
-                    </button>
-              </li>
+                    </a>
+                </div>
+            </tfoot>
+        </section>
+    </main>
+        <footer class="footer">
+            <ul class="footer__items">
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                © 2019 CPS
+                <br>
+                Разработано командой Apesong
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                Политика конфиденциальности
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">
+                Информация, размещенная на данной странице,
+                не является публичной офертой
+                </a>
+            </li>
             </ul>
-          </div>
-          </section>
-          <div class="price-table__footer">
-            <div class="price-table__footer-container">
-                <p class="price-table__footer-description">
-                    Все цены указаны с учетом НДС. Стоимость ремонта
-                    указана на единичную услугу. Для получения коммерческого
-                    предложения на постоянное обслуживание, оставьте заявку.
-                </p>
-                <a href="#" class="price-table__link">
-                    <span class="price-table__link-caption">Получить коммерческое предложение</span>
-                    <svg width="6" height="10" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6L0.707106 2.20711C0.316582 1.81658 0.316582 1.18342 0.707107 0.792893L0.792893 0.707107C1.18342 0.316583 1.81658 0.316583 2.20711 0.707107L6.79289 5.29289C7.18342 5.68342 7.18342 6.31658 6.79289 6.70711L2.20711 11.2929C1.81658 11.6834 1.18342 11.6834 0.792893 11.2929L0.707107 11.2071C0.316583 10.8166 0.316583 10.1834 0.707107 9.79289L4.5 6Z" fill="#FF3E79"/>
-                    </svg>
-
-              </a>
-            </div>
-          </div>
-      </main>
-
-      <footer class="footer">
-        <ul class="footer__items">
-          <li class="footer__item">
-            <a href="#" class="footer__link">
-              © 2019 CPS
-              <br>
-              Разработано командой Apesong
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
-              Политика конфиденциальности
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
-              Информация, размещенная на данной странице,
-              не является публичной офертой
-            </a>
-          </li>
-        </ul>
-      </footer>
-
+        </footer>
     </div>
 
     <aside class="modal-form modal-feedback">
