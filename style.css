@@ -985,9 +985,6 @@ button:hover, a:hover {
 
 .overlay--active {
   visibility: visible; }
-  @media (min-width: 1120px) {
-    .overlay--active {
-      visibility: hidden; } }
 
 .prices__nav {
   width: 100%;
