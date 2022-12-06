@@ -185,13 +185,7 @@
     .aside__close .aside-btn__close {
       display: none; } }
 
-.aside__main {
-  flex: 1 1 1/3; }
-
 .aside__nav {
-  flex-grow: 1; }
-
-.aside__nav-items {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

@@ -28,60 +28,41 @@
                     <img src="./img/search.svg" alt="Поиск">
                 </button>
             </div>
-            <div class="aside__main">
-                <nav class="aside__nav">
-                    <ul class="aside__nav-items">
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Ремонт техники</a></li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link aside__nav-link--active">Услуги и сервисы</a>
-                        </li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Корпоративным клиентам</a>
-                        </li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Продавцам техники</a>
-                        </li>
-                        <li class="aside__nav-item">
-                        <a href="#" class="aside__nav-link">Партнерам</a>
-                        </li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Производителям</a>
-                        </li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Наши сервисные центры</a>
-                        </li>
-                        <li class="aside__nav-item">
-                            <a href="#" class="aside__nav-link">Контакты</a>
-                        </li>
-                </ul>
+            <nav class="aside__nav">
+                <a href="#" class="aside__nav-link">Ремонт техники</a>
+                <a href="#" class="aside__nav-link aside__nav-link--active">Услуги и сервисы</a>
+                <a href="#" class="aside__nav-link">Корпоративным клиентам</a>
+                <a href="#" class="aside__nav-link">Продавцам техники</a>
+                <a href="#" class="aside__nav-link">Партнерам</a>
+                <a href="#" class="aside__nav-link">Производителям</a>
+                <a href="#" class="aside__nav-link">Наши сервисные центры</a>
+                <a href="#" class="aside__nav-link">Контакты</a>
             </nav>
-        </div>
-        <div class="aside__footer">
-            <div class="aside__footer-inner">
-                    <div class="aside__footer-nav">
-                        <button class="aside__btn btn--call">
-                            <img src="./img/call.svg" alt="Позвонить">
-                        </button>
-                        <button class="aside__btn btn--chat">
-                            <img src="./img/chat.svg" alt="Написать в чат">
-                        </button>
-                        <button class="aside__btn btn--profile">
-                            <img src="./img/profile.svg" alt="Открыть профиль">
-                        </button>
+            <div class="aside__footer">
+                <div class="aside__footer-inner">
+                        <div class="aside__footer-nav">
+                            <button class="aside__btn btn--call">
+                                <img src="./img/call.svg" alt="Позвонить">
+                            </button>
+                            <button class="aside__btn btn--chat">
+                                <img src="./img/chat.svg" alt="Написать в чат">
+                            </button>
+                            <button class="aside__btn btn--profile">
+                                <img src="./img/profile.svg" alt="Открыть профиль">
+                            </button>
+                        </div>
+                        <div class="aside__contacts">
+                            <a class="aside__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                            <a class="aside__phone" href="”tel:+78008908900”">8 800 890 8900</a>
+                        </div>
                     </div>
-                    <div class="aside__contacts">
-                        <a class="aside__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-                        <a class="aside__phone" href="”tel:+78008908900”">8 800 890 8900</a>
+                    <div class="aside__lang-options">
+                        <button class="lang__btn lang__btn--active">RU</button>
+                        <button class="lang__btn">EN</button>
+                        <button class="lang__btn">CH</button>
                     </div>
-                </div>
-                <div class="aside__lang-options">
-                    <button class="lang__btn lang__btn--active">RU</button>
-                    <button class="lang__btn">EN</button>
-                    <button class="lang__btn">CH</button>
                 </div>
             </div>
-        </div>
       </div>
     </aside>
 
@@ -727,97 +708,98 @@
             </tfoot>
         </section>
     </main>
-        <footer class="footer">
-            <ul class="footer__items">
+
+    <footer class="footer">
+        <ul class="footer__items">
             <li class="footer__item">
                 <a href="#" class="footer__link">
-                © 2019 CPS
-                <br>
-                Разработано командой Apesong
+                    © 2019 CPS
+                    <br>
+                    Разработано командой Apesong
                 </a>
             </li>
             <li class="footer__item">
-                <a href="#" class="footer__link">
-                Политика конфиденциальности
-                </a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
             </li>
             <li class="footer__item">
                 <a href="#" class="footer__link">
-                Информация, размещенная на данной странице,
-                не является публичной офертой
+                    Информация, размещенная на данной странице,
+                    не является публичной офертой
                 </a>
             </li>
-            </ul>
-        </footer>
-    </div>
+        </ul>
+    </footer>
+
+</div>
 
     <aside class="modal-form modal-feedback">
-      <div class="modal-form__container">
-        <button class="modal-form__close modal-form__close--feedback">
-          <img src="./img/burger-exit.svg" class="modal-form__btn" alt="Кнопка закрыть меню">
-        </button>
-        <h4 class="modal-feedback__title">
-          Обратная связь
-        </h4>
-        <ul class="modal-feedback__items">
-          <li class="modal-feedback__item">
-            <form action="#" method="post" class="modal-feedback__forms">
-              <input type="name" placeholder="Имя" class="modal-feedback__input">
-            </form>
-          </li>
-          <li class="modal-feedback__item">
-            <form action="#" method="post" class="modal-feedback__forms">
-              <input type="tel" placeholder="Телефон" class="modal-feedback__input">
-            </form>
-          </li>
-          <li class="modal-feedback__item">
-            <form action="#" method="post" class="modal-feedback__forms">
-              <input type="email" placeholder="Электронная почта" class="modal-feedback__input">
-            </form>
-          </li>
-          <li class="modal-feedback__item">
-            <form action="#" method="post" class="modal-feedback__forms">
-              <textarea placeholder="Сообщение" class="modal-feedback__input modal-feedback__input--big"></textarea>
-            </form>
-          </li>
-        </ul>
-        <p class="modal-form__agreement">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="modal-form__link">обработку персональных данных</a>
-          и соглашаетесь с нашей
-          <a href="#" class="modal-form__link">политикой конфиденциальности</a>
-        </p>
-        <button type="submit" class="modal-form__submit modal-form__submit--feedback button">
-          <span class="button__text">Отправить</span>
-          <div class="button__icon"> </div>
-        </button>
 
-      </div>
+        <div class="modal-form__container">
+
+            <button class="modal-form__close modal-form__close--feedback">
+                <img src="./img/burger-exit.svg" class="modal-form__btn" alt="Кнопка закрыть меню">
+            </button>
+            <h4 class="modal-feedback__title">Обратная связь</h4>
+            <ul class="modal-feedback__items">
+                <li class="modal-feedback__item">
+                    <form action="#" method="post" class="modal-feedback__forms">
+                    <input type="name" placeholder="Имя" class="modal-feedback__input">
+                    </form>
+                </li>
+                <li class="modal-feedback__item">
+                    <form action="#" method="post" class="modal-feedback__forms">
+                    <input type="tel" placeholder="Телефон" class="modal-feedback__input">
+                    </form>
+                </li>
+                <li class="modal-feedback__item">
+                    <form action="#" method="post" class="modal-feedback__forms">
+                    <input type="email" placeholder="Электронная почта" class="modal-feedback__input">
+                    </form>
+                </li>
+                <li class="modal-feedback__item">
+                    <form action="#" method="post" class="modal-feedback__forms">
+                    <textarea placeholder="Сообщение" class="modal-feedback__input modal-feedback__input--big"></textarea>
+                    </form>
+                </li>
+            </ul>
+            <p class="modal-form__agreement">
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="modal-form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="modal-form__link">политикой конфиденциальности</a>
+            </p>
+            <button type="submit" class="modal-form__submit modal-form__submit--feedback button">
+                <span class="button__text">Отправить</span>
+                <div class="button__icon"> </div>
+            </button>
+
+        </div>
+
     </aside>
 
     <aside class="modal-form modal-call">
-      <div class="modal-form__container">
-        <button class="modal-form__close modal-form__close--call">
-          <img src="./img/burger-exit.svg" class="modal-form__btn" alt="Кнопка закрыть меню">
-        </button>
-        <h4 class="modal-call__title">
-          Заказать звонок
-        </h4>
-        <form action="#" method="post" class="modal-call__forms">
-          <input type="tel" placeholder="Телефон" class="modal-call__input">
-        </form>
-        <p class="modal-form__agreement">
-          Нажимая “отправить”, вы даете согласие на
-          <a href="#" class="modal-form__link">обработку персональных данных</a>
-          и соглашаетесь с нашей
-          <a href="#" class="modal-form__link">политикой конфиденциальности</a>
-        </p>
-        <button type="submit" class="modal-form__submit modal-form__submit--call button">
-          <span class="button__text">Отправить</span>
-          <div class="button__icon"></div>
-        </button>
 
-      </div>
+        <div class="modal-form__container">
+
+            <button class="modal-form__close modal-form__close--call">
+                <img src="./img/burger-exit.svg" class="modal-form__btn" alt="Кнопка закрыть меню">
+            </button>
+            <h4 class="modal-call__title">Заказать звонок</h4>
+            <form action="#" method="post" class="modal-call__forms">
+                <input type="tel" placeholder="Телефон" class="modal-call__input">
+            </form>
+            <p class="modal-form__agreement">Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="modal-form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="modal-form__link">политикой конфиденциальности</a>
+            </p>
+            <button type="submit" class="modal-form__submit modal-form__submit--call button">
+                <span class="button__text">Отправить</span>
+                <div class="button__icon"></div>
+            </button>
+
+        </div>
+
     </aside>
 
     <div class="overlay"></div>
