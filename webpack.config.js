@@ -21,7 +21,6 @@ module.exports = {
 
   module: {
     rules: [
-      // Транспилируем js с babel
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -34,18 +33,15 @@ module.exports = {
         }
       },
 
-      // Компилируем SCSS в CSS
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Extract css to separate file
-          'css-loader', // translates CSS into CommonJS
-          'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
+          MiniCssExtractPlugin.loader, 
+          'css-loader', 
+          'postcss-loader', 
+          'sass-loader', 
         ],
       },
-
-      // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
@@ -55,7 +51,6 @@ module.exports = {
         ]
       },
 
-      // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
@@ -67,7 +62,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // Подключаем файл html, стили и скрипты встроятся автоматически
+   
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
       template: './src/index.html',
@@ -78,12 +73,10 @@ module.exports = {
       }
     }),
 
-    // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
 
-    // Копируем картинки
     new CopyWebpackPlugin([
       {
         from: './src/img',
